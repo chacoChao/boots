@@ -66,6 +66,11 @@
 			<artifactId>javafaker</artifactId>
 			<version>0.18</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-autoconfigure</artifactId>
+		</dependency>
 	</dependencies>
 
 	<dependencyManagement>
