@@ -1,9 +1,6 @@
 package com.chaco.chao.prop;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
@@ -14,9 +11,6 @@ import org.springframework.stereotype.Component;
 @Component
 @ConfigurationProperties(prefix = "spring.gwname")
 @Data
-@AllArgsConstructor
-@Getter
-@Setter
 public class GwProperties {
     private String name = "chaco";
 }
