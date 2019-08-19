@@ -8,6 +8,9 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.Observable;
+import java.util.Observer;
+
 /**
  * author:zhaopeiyan001
  * Date:2019-08-13 10:49
@@ -27,5 +30,12 @@ public class ProxyTest {
         proxy.add();
 
         Assert.assertNotNull(proxy);
+
+        new Observer() {
+            @Override
+            public void update(Observable o, Object arg) {
+
+            }
+        };
     }
 }
