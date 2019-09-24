@@ -1,7 +1,6 @@
 package com.chaco.chao.filter;
 
-import com.chaco.config.RequestWrapper;
-
+import com.chaco.chao.config.RequestWrapper;
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;

@@ -1,8 +1,6 @@
 package com.chaco.chao.config.lock;
 
-
-import com.chaco.config.redis.RedisLock;
-import com.chaco.constant.Constants;
+import com.chaco.chao.config.redis.RedisLock;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.annotation.Resource;
@@ -14,7 +12,7 @@ import javax.annotation.Resource;
 @Slf4j
 public class LockSupport {
     private static final String COLON_SEPARATOR = "_";
-    private static final String PERF_SUBJECT_LOCK_PERFIX = Constants.APP_NAME + "_SUBJECT";
+    private static final String PERF_SUBJECT_LOCK_PERFIX = "chaco" + "_SUBJECT";
 
     @Resource
     private RedisLock redisLock;
