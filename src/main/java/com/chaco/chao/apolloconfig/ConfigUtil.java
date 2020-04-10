@@ -1,4 +1,4 @@
-package com.lianjia.finance.commons.util;
+package com.chaco.chao.apolloconfig;
 
 import org.springframework.context.annotation.Configuration;
 
