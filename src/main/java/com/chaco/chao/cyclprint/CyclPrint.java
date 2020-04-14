@@ -14,6 +14,7 @@ public class CyclPrint {
     private ReentrantLock lock = new ReentrantLock();
 
     private Condition condition = lock.newCondition();
+    private Condition condition1 = lock.newCondition();
 
     private boolean hasValue = false;
 
@@ -25,7 +26,7 @@ public class CyclPrint {
             }
             log.info("打印A");
             hasValue = true;
-            condition.signal();
+            condition1.signal();
         } catch (Exception e) {
             e.printStackTrace();
             log.info("error:" + e.getMessage());
@@ -38,7 +39,7 @@ public class CyclPrint {
         try {
             lock.lock();
             while (!hasValue) {
-                condition.await();
+                condition1.await();
             }
             log.info("打印B");
             hasValue = false;
@@ -52,6 +53,11 @@ public class CyclPrint {
 
 
     public static void main(String[] args) {
-        new Thread()
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                CyclPrint cyclPrint = new CyclPrint();
+            }
+        }).start();
     }
 }
