@@ -178,5 +178,22 @@ public class RedisUtils {
         }
     }
 
+    public Long incr(String key) {
+        Jedis jedis = jedisPool.getResource();
+        try {
+            return jedis.incr(key);
+        } finally {
+            jedis.close();
+        }
+    }
+
+    public Long expire(String key, Integer seconds) {
+        Jedis jedis = jedisPool.getResource();
+        try {
+            return jedis.expire(key, seconds);
+        } finally {
+            jedis.close();
+        }
+    }
 }
 
