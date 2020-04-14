@@ -38,7 +38,7 @@ class ServerSocketChannelHandle implements CompletionHandler<AsynchronousSocketC
         //为这个新的socketChannel注册read事件，以便操作系统在收到数据并准备好后，主动通知应用程序
         //我们要将这个客户端多次传输的数据累加起来一起处理，所以我们将一个stringbuffer对象作为一个'附件'依附在这个channel上
         ByteBuffer readBuffer = ByteBuffer.allocate(64);
-        result.read(readBuffer, new StringBuffer(), new SocketChannelReadHandle(result, readBuffer));
+//        result.read(readBuffer, new StringBuffer(), new SocketChannelReadHandle(result, readBuffer));
     }
 
     @Override
