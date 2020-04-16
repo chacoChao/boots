@@ -1,10 +1,10 @@
-package com.chaco.chao.mathT;
+package com.chaco.chao.algorithms;
 
 /**
  * author:zhaopeiyan001
  * Date:2020-04-15 11:15
  */
-public class mathTest {
+public class arrayTargetIndex {
 
     /**
      * 给定一个按照升序排列的整数数组 nums，和一个目标值 target。找出给定目标值在数组中的开始位置和结束位置。

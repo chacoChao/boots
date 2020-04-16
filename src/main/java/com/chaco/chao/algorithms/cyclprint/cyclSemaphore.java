@@ -1,4 +1,4 @@
-package com.chaco.chao.cyclprint;
+package com.chaco.chao.algorithms.cyclprint;
 
 import java.util.concurrent.Semaphore;
 
