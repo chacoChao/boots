@@ -1,4 +1,4 @@
-package com.chaco.chao.algorithms;
+package com.chaco.chao.algorithms.fibonacci;
 
 import org.junit.jupiter.api.Test;
 
