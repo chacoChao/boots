@@ -1,5 +1,9 @@
 package com.chaco.chao.distrbuteLock;
 
+import org.redisson.Redisson;
+import org.redisson.api.RLock;
+import org.redisson.api.RedissonClient;
+
 /**
  * wiki:
  * https://blog.csdn.net/tianyaleixiaowu/article/details/96112684
@@ -10,6 +14,8 @@ package com.chaco.chao.distrbuteLock;
 public class RedisLock {
 
     public void getLock() {
+        RedissonClient redissonClient = Redisson.create();
+        RLock key = redissonClient.getLock("key");
 
     }
 }
