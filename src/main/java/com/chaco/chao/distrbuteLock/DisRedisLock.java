@@ -11,7 +11,7 @@ import org.redisson.api.RedissonClient;
  * author:zhaopeiyan001
  * Date:2020-04-14 14:42
  */
-public class RedisLock {
+public class DisRedisLock {
 
     public void getLock() {
         RedissonClient redissonClient = Redisson.create();
