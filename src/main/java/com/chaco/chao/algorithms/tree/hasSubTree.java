@@ -1,5 +1,8 @@
 package com.chaco.chao.algorithms.tree;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.ToString;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -45,6 +48,10 @@ public class hasSubTree {
         System.out.println("========" + b);
     }
 
+    @Data
+    @AllArgsConstructor
+    @ToString
+    static
     class TreeNode {
         int val = 0;
         TreeNode left = null;
