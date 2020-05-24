@@ -1,3 +1,4 @@
+/*
 package com.chaco.chao.agent;
 
 import com.sun.tools.attach.VirtualMachine;
@@ -15,10 +16,12 @@ import java.lang.instrument.IllegalClassFormatException;
 import java.lang.instrument.Instrumentation;
 import java.security.ProtectionDomain;
 
+*/
 /**
  * author:zhaopeiyan001
  * Date:2019-08-19 16:47
- */
+ *//*
+
 public class InstrumentationExample {
 
     public void virtualMachine() throws Exception {
@@ -87,3 +90,4 @@ public class InstrumentationExample {
         });
     }
 }
+*/
